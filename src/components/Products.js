@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import SingleProduce from './SingleProduce';
 import { fetchProducts } from '../redux/productSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,6 +11,7 @@ const Products = () => {
     useEffect(() => {
         products.data.length <= 0 &&
             dispatch(fetchProducts());
+        // eslint-disable-next-line
     }, [products.data]);
 
     return (

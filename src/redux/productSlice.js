@@ -1,4 +1,5 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
+// import { createAsyncThunk } from '@reduxjs/toolkit'
 
 const STATUSES = Object.freeze({
     IDLE: 'idle',
